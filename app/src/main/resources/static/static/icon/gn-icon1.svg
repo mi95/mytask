@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="80px" height="80px" viewBox="0 0 80 80" enable-background="new 0 0 80 80" xml:space="preserve">
+<circle fill="#D46B4B" cx="40" cy="40" r="39"/>
+<g>
+	<path opacity="0.7" fill="#FFFFFF" d="M57.858,29.144l-8.966,5.524L40.294,23.2c-0.07-0.094-0.18-0.149-0.297-0.149
+		c-0.117,0-0.227,0.055-0.297,0.149l-8.593,11.468l-8.97-5.524c-0.253-0.157-0.581,0.041-0.562,0.336v0.028v0.046l3.52,26.75
+		c0.051,0.364,0.364,0.645,0.737,0.645h28.339c0.369,0,0.687-0.276,0.733-0.645l3.52-26.75c0.003-0.015,0.001-0.031,0-0.046v-0.023
+		C58.438,29.19,58.116,28.987,57.858,29.144z"/>
+	<g opacity="0.4">
+		
+			<image overflow="visible" opacity="0.75" width="115" height="115" xlink:href="B2E23B41.png"  transform="matrix(0.24 0 0 0.24 26.755 29.5115)">
+		</image>
+		<g>
+			<path fill="#FFFFFF" d="M40.531,51.961c-4.77,0-8.673-3.903-8.673-8.673c0-4.77,3.903-8.673,8.673-8.673
+				c4.77,0,8.673,3.903,8.673,8.673C49.204,48.058,45.301,51.961,40.531,51.961z"/>
+		</g>
+	</g>
+	<g opacity="0.9">
+		
+			<image overflow="visible" opacity="0.75" width="91" height="91" xlink:href="B2E23B43.png"  transform="matrix(0.24 0 0 0.24 29.646 32.4026)">
+		</image>
+		<g>
+			<path fill="#FFFFFF" d="M40.531,37.506c-3.18,0-5.782,2.602-5.782,5.782s2.602,5.782,5.782,5.782c3.18,0,5.782-2.602,5.782-5.782
+				S43.711,37.506,40.531,37.506z"/>
+		</g>
+	</g>
+</g>
+</svg>
