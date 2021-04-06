@@ -6,6 +6,12 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
+ * @author  xiaomi
+ * @create  2021/4/6
+ * 
+ **/
+
+/**
  * 图片表
  */
 @Data
@@ -26,6 +32,11 @@ public class TaskStepImg implements Serializable {
      * 图片路径
      */
     private String imgUrl;
+
+    /**
+     * 任务编号
+     */
+    private Integer taskId;
 
     private static final long serialVersionUID = 1L;
 }

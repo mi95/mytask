@@ -1,11 +1,9 @@
 package com.app.controller;
 
-import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.app.service.UserService;
 import com.common.pojo.RespBean;
 import com.common.pojo.generate.UserInfos;
-import org.apache.ibatis.annotations.Update;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

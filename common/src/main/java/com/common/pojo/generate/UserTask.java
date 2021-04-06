@@ -6,6 +6,12 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
+ * @author  xiaomi
+ * @create  2021/4/6
+ * 
+ **/
+
+/**
  * 用户任务表
  */
 @Data
@@ -28,12 +34,7 @@ public class UserTask implements Serializable {
     private Integer taskId;
 
     /**
-     * 备注
-     */
-    private String remark;
-
-    /**
-     * 状态 0-审核不通过 1-待审核 2-审核通过
+     * 状态 0-审核不通过 1-待审核 2-审核中 3-审核通过
      */
     private Integer status;
 

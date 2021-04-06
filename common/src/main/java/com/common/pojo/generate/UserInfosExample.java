@@ -3,6 +3,11 @@ package com.common.pojo.generate;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author  xiaomi
+ * @create  2021/4/6
+ * 
+ **/
 public class UserInfosExample {
     protected String orderByClause;
 

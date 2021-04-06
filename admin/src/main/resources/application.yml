@@ -18,11 +18,11 @@ spring:
           max-file-size: 10MB
 
 mybatis:
-  mapper-locations: classpath:mapperxml/*.xml
+  mapper-locations: classpath:mapperxml/*.xml,classpath:mapperxml/generate/*.xml
 
 httpUrl: http://127.0.0.1
 
 logging:
   level.*: info,debug,error,warn
   level:
-    com.admin.mapper: debug
+    com.common.mapper: debug

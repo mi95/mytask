@@ -6,6 +6,12 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
+ * @author  xiaomi
+ * @create  2021/4/6
+ * 
+ **/
+
+/**
  * 用户表
  */
 @Data

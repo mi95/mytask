@@ -7,6 +7,7 @@
     <id column="id" property="id" />
     <result column="task_step_id" property="taskStepId" />
     <result column="img_url" property="imgUrl" />
+    <result column="task_id" property="taskId" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <!--@mbg.generated-->
@@ -70,7 +71,7 @@
   </sql>
   <sql id="Base_Column_List">
     <!--@mbg.generated-->
-    id, task_step_id, img_url
+    id, task_step_id, img_url, task_id
   </sql>
   <select id="selectByExample" parameterType="com.common.pojo.generate.TaskStepImgExample" resultMap="BaseResultMap">
     <!--@mbg.generated-->
@@ -108,8 +109,8 @@
   </delete>
   <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.common.pojo.generate.TaskStepImg" useGeneratedKeys="true">
     <!--@mbg.generated-->
-    insert into task_step_img (task_step_id, img_url)
-    values (#{taskStepId}, #{imgUrl})
+    insert into task_step_img (task_step_id, img_url, task_id)
+    values (#{taskStepId}, #{imgUrl}, #{taskId})
   </insert>
   <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.common.pojo.generate.TaskStepImg" useGeneratedKeys="true">
     <!--@mbg.generated-->
@@ -121,6 +122,9 @@
       <if test="imgUrl != null">
         img_url,
       </if>
+      <if test="taskId != null">
+        task_id,
+      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
       <if test="taskStepId != null">
@@ -128,6 +132,9 @@
       </if>
       <if test="imgUrl != null">
         #{imgUrl},
+      </if>
+      <if test="taskId != null">
+        #{taskId},
       </if>
     </trim>
   </insert>
@@ -151,6 +158,9 @@
       <if test="record.imgUrl != null">
         img_url = #{record.imgUrl},
       </if>
+      <if test="record.taskId != null">
+        task_id = #{record.taskId},
+      </if>
     </set>
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
@@ -161,7 +171,8 @@
     update task_step_img
     set id = #{record.id},
       task_step_id = #{record.taskStepId},
-      img_url = #{record.imgUrl}
+      img_url = #{record.imgUrl},
+      task_id = #{record.taskId}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
@@ -176,6 +187,9 @@
       <if test="imgUrl != null">
         img_url = #{imgUrl},
       </if>
+      <if test="taskId != null">
+        task_id = #{taskId},
+      </if>
     </set>
     where id = #{id}
   </update>
@@ -183,7 +197,8 @@
     <!--@mbg.generated-->
     update task_step_img
     set task_step_id = #{taskStepId},
-      img_url = #{imgUrl}
+      img_url = #{imgUrl},
+      task_id = #{taskId}
     where id = #{id}
   </update>
   <update id="updateBatch" parameterType="java.util.List">
@@ -198,6 +213,11 @@
       <trim prefix="img_url = case" suffix="end,">
         <foreach collection="list" index="index" item="item">
           when id = #{item.id} then #{item.imgUrl}
+        </foreach>
+      </trim>
+      <trim prefix="task_id = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          when id = #{item.id} then #{item.taskId}
         </foreach>
       </trim>
     </trim>
@@ -224,6 +244,13 @@
           </if>
         </foreach>
       </trim>
+      <trim prefix="task_id = case" suffix="end,">
+        <foreach collection="list" index="index" item="item">
+          <if test="item.taskId != null">
+            when id = #{item.id} then #{item.taskId}
+          </if>
+        </foreach>
+      </trim>
     </trim>
     where id in
     <foreach close=")" collection="list" item="item" open="(" separator=", ">
@@ -233,10 +260,10 @@
   <insert id="batchInsert" keyColumn="id" keyProperty="id" parameterType="map" useGeneratedKeys="true">
     <!--@mbg.generated-->
     insert into task_step_img
-    (task_step_id, img_url)
+    (task_step_id, img_url, task_id)
     values
     <foreach collection="list" item="item" separator=",">
-      (#{item.taskStepId}, #{item.imgUrl})
+      (#{item.taskStepId}, #{item.imgUrl}, #{item.taskId})
     </foreach>
   </insert>
   <insert id="insertOrUpdate" keyColumn="id" keyProperty="id" parameterType="com.common.pojo.generate.TaskStepImg" useGeneratedKeys="true">
@@ -248,6 +275,7 @@
       </if>
       task_step_id,
       img_url,
+      task_id,
     </trim>
     values
     <trim prefix="(" suffix=")" suffixOverrides=",">
@@ -256,6 +284,7 @@
       </if>
       #{taskStepId},
       #{imgUrl},
+      #{taskId},
     </trim>
     on duplicate key update 
     <trim suffixOverrides=",">
@@ -264,6 +293,7 @@
       </if>
       task_step_id = #{taskStepId},
       img_url = #{imgUrl},
+      task_id = #{taskId},
     </trim>
   </insert>
   <insert id="insertOrUpdateSelective" keyColumn="id" keyProperty="id" parameterType="com.common.pojo.generate.TaskStepImg" useGeneratedKeys="true">
@@ -279,6 +309,9 @@
       <if test="imgUrl != null">
         img_url,
       </if>
+      <if test="taskId != null">
+        task_id,
+      </if>
     </trim>
     values
     <trim prefix="(" suffix=")" suffixOverrides=",">
@@ -291,6 +324,9 @@
       <if test="imgUrl != null">
         #{imgUrl},
       </if>
+      <if test="taskId != null">
+        #{taskId},
+      </if>
     </trim>
     on duplicate key update 
     <trim suffixOverrides=",">
@@ -302,6 +338,9 @@
       </if>
       <if test="imgUrl != null">
         img_url = #{imgUrl},
+      </if>
+      <if test="taskId != null">
+        task_id = #{taskId},
       </if>
     </trim>
   </insert>

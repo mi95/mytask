@@ -5,7 +5,7 @@ import com.common.pojo.RespBean;
 import com.common.pojo.generate.UserInfos;
 
 public interface UserService {
-    RespBean login( UserInfos userInfos);
+    RespBean login(UserInfos userInfos);
 
     RespBean register( UserInfos userInfos);
 

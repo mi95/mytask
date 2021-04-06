@@ -6,6 +6,12 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
+ * @author  xiaomi
+ * @create  2021/4/6
+ * 
+ **/
+
+/**
  * 任务步骤表
  */
 @Data
@@ -30,7 +36,7 @@ public class TaskStep implements Serializable {
     /**
      * 步骤描述
      */
-    private String reamrk;
+    private String remark;
 
     private static final long serialVersionUID = 1L;
 }

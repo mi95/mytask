@@ -2,10 +2,15 @@ package com.common.pojo.generate;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
-import java.util.Date;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+/**
+ * @author  xiaomi
+ * @create  2021/4/6
+ * 
+ **/
 
 /**
  * 任务表
@@ -18,11 +23,6 @@ public class TaskInfos implements Serializable {
      * 主键
      */
     private Integer id;
-
-    /**
-     * 创建时间
-     */
-    private Date createTime;
 
     /**
      * 标题

@@ -7,7 +7,7 @@
     <id column="id" property="id" />
     <result column="task_id" property="taskId" />
     <result column="step_num" property="stepNum" />
-    <result column="reamrk" property="reamrk" />
+    <result column="remark" property="remark" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <!--@mbg.generated-->
@@ -71,7 +71,7 @@
   </sql>
   <sql id="Base_Column_List">
     <!--@mbg.generated-->
-    id, task_id, step_num, reamrk
+    id, task_id, step_num, remark
   </sql>
   <select id="selectByExample" parameterType="com.common.pojo.generate.TaskStepExample" resultMap="BaseResultMap">
     <!--@mbg.generated-->
@@ -109,8 +109,8 @@
   </delete>
   <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.common.pojo.generate.TaskStep" useGeneratedKeys="true">
     <!--@mbg.generated-->
-    insert into task_step (task_id, step_num, reamrk)
-    values (#{taskId}, #{stepNum}, #{reamrk})
+    insert into task_step (task_id, step_num, remark)
+    values (#{taskId}, #{stepNum}, #{remark})
   </insert>
   <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.common.pojo.generate.TaskStep" useGeneratedKeys="true">
     <!--@mbg.generated-->
@@ -122,8 +122,8 @@
       <if test="stepNum != null">
         step_num,
       </if>
-      <if test="reamrk != null">
-        reamrk,
+      <if test="remark != null">
+        remark,
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
@@ -133,8 +133,8 @@
       <if test="stepNum != null">
         #{stepNum},
       </if>
-      <if test="reamrk != null">
-        #{reamrk},
+      <if test="remark != null">
+        #{remark},
       </if>
     </trim>
   </insert>
@@ -158,8 +158,8 @@
       <if test="record.stepNum != null">
         step_num = #{record.stepNum},
       </if>
-      <if test="record.reamrk != null">
-        reamrk = #{record.reamrk},
+      <if test="record.remark != null">
+        remark = #{record.remark},
       </if>
     </set>
     <if test="_parameter != null">
@@ -172,7 +172,7 @@
     set id = #{record.id},
       task_id = #{record.taskId},
       step_num = #{record.stepNum},
-      reamrk = #{record.reamrk}
+      remark = #{record.remark}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
@@ -187,8 +187,8 @@
       <if test="stepNum != null">
         step_num = #{stepNum},
       </if>
-      <if test="reamrk != null">
-        reamrk = #{reamrk},
+      <if test="remark != null">
+        remark = #{remark},
       </if>
     </set>
     where id = #{id}
@@ -198,7 +198,7 @@
     update task_step
     set task_id = #{taskId},
       step_num = #{stepNum},
-      reamrk = #{reamrk}
+      remark = #{remark}
     where id = #{id}
   </update>
   <update id="updateBatch" parameterType="java.util.List">
@@ -215,9 +215,9 @@
           when id = #{item.id} then #{item.stepNum}
         </foreach>
       </trim>
-      <trim prefix="reamrk = case" suffix="end,">
+      <trim prefix="remark = case" suffix="end,">
         <foreach collection="list" index="index" item="item">
-          when id = #{item.id} then #{item.reamrk}
+          when id = #{item.id} then #{item.remark}
         </foreach>
       </trim>
     </trim>
@@ -244,10 +244,10 @@
           </if>
         </foreach>
       </trim>
-      <trim prefix="reamrk = case" suffix="end,">
+      <trim prefix="remark = case" suffix="end,">
         <foreach collection="list" index="index" item="item">
-          <if test="item.reamrk != null">
-            when id = #{item.id} then #{item.reamrk}
+          <if test="item.remark != null">
+            when id = #{item.id} then #{item.remark}
           </if>
         </foreach>
       </trim>
@@ -260,10 +260,10 @@
   <insert id="batchInsert" keyColumn="id" keyProperty="id" parameterType="map" useGeneratedKeys="true">
     <!--@mbg.generated-->
     insert into task_step
-    (task_id, step_num, reamrk)
+    (task_id, step_num, remark)
     values
     <foreach collection="list" item="item" separator=",">
-      (#{item.taskId}, #{item.stepNum}, #{item.reamrk})
+      (#{item.taskId}, #{item.stepNum}, #{item.remark})
     </foreach>
   </insert>
   <insert id="insertOrUpdate" keyColumn="id" keyProperty="id" parameterType="com.common.pojo.generate.TaskStep" useGeneratedKeys="true">
@@ -275,7 +275,7 @@
       </if>
       task_id,
       step_num,
-      reamrk,
+      remark,
     </trim>
     values
     <trim prefix="(" suffix=")" suffixOverrides=",">
@@ -284,7 +284,7 @@
       </if>
       #{taskId},
       #{stepNum},
-      #{reamrk},
+      #{remark},
     </trim>
     on duplicate key update 
     <trim suffixOverrides=",">
@@ -293,7 +293,7 @@
       </if>
       task_id = #{taskId},
       step_num = #{stepNum},
-      reamrk = #{reamrk},
+      remark = #{remark},
     </trim>
   </insert>
   <insert id="insertOrUpdateSelective" keyColumn="id" keyProperty="id" parameterType="com.common.pojo.generate.TaskStep" useGeneratedKeys="true">
@@ -309,8 +309,8 @@
       <if test="stepNum != null">
         step_num,
       </if>
-      <if test="reamrk != null">
-        reamrk,
+      <if test="remark != null">
+        remark,
       </if>
     </trim>
     values
@@ -324,8 +324,8 @@
       <if test="stepNum != null">
         #{stepNum},
       </if>
-      <if test="reamrk != null">
-        #{reamrk},
+      <if test="remark != null">
+        #{remark},
       </if>
     </trim>
     on duplicate key update 
@@ -339,8 +339,8 @@
       <if test="stepNum != null">
         step_num = #{stepNum},
       </if>
-      <if test="reamrk != null">
-        reamrk = #{reamrk},
+      <if test="remark != null">
+        remark = #{remark},
       </if>
     </trim>
   </insert>
