@@ -2,94 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e83558c1-52b0-46c8-a447-e1ea7e1f043c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_1_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_spring_boot_starter_1_1_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/src/main/java/com/admin/pojo/TaskStepBo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/common/CommonApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/MyBatisCodeHelperDatasource.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MyBatisCodeHelperDatasource.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/32b4d973-8770-4130-a84b-efbde6bed91f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/32b4d973-8770-4130-a84b-efbde6bed91f.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_10_22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_18_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_3_6_28.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_3_6_28.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_3_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_4_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_4_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_4_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_3_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_7_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/admin/controller/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/admin/controller/TaskController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/admin/service/TaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/admin/service/TaskService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/admin/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/admin/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/admin/service/impl/MemberServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/admin/service/impl/MemberServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/admin/service/impl/TaskServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/admin/service/impl/TaskServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/java/com/admin/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/com/admin/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/src/test/java/com/admin/AdminApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/app/service/impl/TaskServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/service/impl/TaskServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/common/mapper/TaskInfosCommonMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/common/mapper/TaskInfosCommonMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/common/mapper/generate/TaskInfosMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/common/mapper/generate/TaskInfosMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/common/mapper/generate/TaskStepImgMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/common/mapper/generate/TaskStepImgMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/common/mapper/generate/TaskStepMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/common/mapper/generate/TaskStepMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/common/mapper/generate/UserInfosMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/common/mapper/generate/UserInfosMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/common/mapper/generate/UserTaskImgMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/common/mapper/generate/UserTaskMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/common/mapper/generate/UserTaskMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/common/pojo/generate/TaskInfos.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/common/pojo/generate/TaskInfos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/common/pojo/generate/TaskInfosExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/common/pojo/generate/TaskInfosExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/common/pojo/generate/TaskStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/common/pojo/generate/TaskStep.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/common/pojo/generate/TaskStepExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/common/pojo/generate/TaskStepExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/common/pojo/generate/TaskStepImg.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/common/pojo/generate/TaskStepImg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/common/pojo/generate/TaskStepImgExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/common/pojo/generate/TaskStepImgExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/common/pojo/generate/UserInfos.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/common/pojo/generate/UserInfos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/common/pojo/generate/UserInfosExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/common/pojo/generate/UserInfosExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/common/pojo/generate/UserTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/common/pojo/generate/UserTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/common/pojo/generate/UserTaskExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/common/pojo/generate/UserTaskExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/common/pojo/generate/UserTaskImg.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/common/pojo/generate/UserTaskImgExample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/resources/mapperxml/TaskInfosCommonMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/resources/mapperxml/TaskInfosCommonMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/resources/mapperxml/TaskInfosMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/resources/mapperxml/TaskStepImgMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/resources/mapperxml/TaskStepMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/resources/mapperxml/UserInfosMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/resources/mapperxml/UserTaskImgMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/resources/mapperxml/UserTaskMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/resources/mapperxml/generate/TaskStepImgMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/resources/mapperxml/generate/TaskStepImgMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/resources/mapperxml/generate/TaskStepMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/resources/mapperxml/generate/TaskStepMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/task.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/task.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytask.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mytask.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -238,12 +158,12 @@
           <expand>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@bf3b96e4" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@5e560d6d" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@bf3b96e4" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@c25bf7e8" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@5e560d6d" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@c578aff2" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
           </expand>
           <select />
@@ -269,6 +189,8 @@
       <workItem from="1617701346476" duration="1390000" />
       <workItem from="1617702745637" duration="177000" />
       <workItem from="1617702928334" duration="239000" />
+      <workItem from="1617757100190" duration="1837000" />
+      <workItem from="1617758952785" duration="5400000" />
     </task>
     <servers />
   </component>

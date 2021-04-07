@@ -198,6 +198,24 @@
                   <option name="insertOnDuplicateKey" value="true" />
                   <option name="javaModelName" value="UserTaskImg" />
                   <option name="moduleName" value="common" />
+                  <option name="sequenceColumn" value="" />
+                  <option name="sequenceId" value="" />
+                  <option name="updateBatch" value="true" />
+                  <option name="updateBatchSelective" value="true" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="db_task:user_task_record">
+              <value>
+                <TableGenerateConfig>
+                  <option name="batchInsert" value="true" />
+                  <option name="generatedKey" value="id" />
+                  <option name="insertOnDuplicateKey" value="true" />
+                  <option name="javaModelName" value="UserTaskRecord" />
+                  <option name="moduleName" value="common" />
+                  <option name="sequenceColumn" value="" />
+                  <option name="sequenceId" value="" />
                   <option name="updateBatch" value="true" />
                   <option name="updateBatchSelective" value="true" />
                   <option name="useActualColumnName" value="false" />

@@ -1170,7 +1170,15 @@
       <Comment>用户任务表</Comment>
       <Collation>utf8_general_ci</Collation>
     </table>
-    <column id="297" parent="292" name="id">
+    <table id="297" parent="8" name="user_task_img">
+      <Comment>用户任务图片表</Comment>
+      <Collation>utf8mb4_0900_ai_ci</Collation>
+    </table>
+    <table id="298" parent="8" name="user_task_record">
+      <Comment>用户任务操作记录</Comment>
+      <Collation>utf8mb4_0900_ai_ci</Collation>
+    </table>
+    <column id="299" parent="292" name="id">
       <Position>1</Position>
       <Comment>主键</Comment>
       <DataType>int|0s</DataType>
@@ -1178,20 +1186,20 @@
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="298" parent="292" name="title">
+    <column id="300" parent="292" name="title">
       <Position>2</Position>
       <Comment>标题</Comment>
       <DataType>varchar(125)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="299" parent="292" name="price">
+    <column id="301" parent="292" name="price">
       <Position>3</Position>
       <Comment>任务价格</Comment>
       <DataType>decimal(10,2 digit)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="300" parent="292" name="status">
+    <column id="302" parent="292" name="status">
       <Position>4</Position>
       <Comment>状态 0-禁用 1-正常</Comment>
       <DataType>int|0s</DataType>
@@ -1199,18 +1207,18 @@
       <DefaultExpression>1</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="301" parent="292" name="remark">
+    <column id="303" parent="292" name="remark">
       <Position>5</Position>
       <Comment>备注</Comment>
       <DataType>varchar(127)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="302" parent="292" name="PRIMARY">
+    <key id="304" parent="292" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="303" parent="293" name="id">
+    <column id="305" parent="293" name="id">
       <Position>1</Position>
       <Comment>主键</Comment>
       <DataType>int|0s</DataType>
@@ -1218,33 +1226,33 @@
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="304" parent="293" name="task_id">
+    <column id="306" parent="293" name="task_id">
       <Position>2</Position>
       <Comment>任务编号</Comment>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="305" parent="293" name="step_num">
+    <column id="307" parent="293" name="step_num">
       <Position>3</Position>
       <Comment>步骤编号</Comment>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="306" parent="293" name="remark">
+    <column id="308" parent="293" name="remark">
       <Position>4</Position>
       <Comment>步骤描述</Comment>
       <DataType>varchar(512)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="307" parent="293" name="PRIMARY">
+    <key id="309" parent="293" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="308" parent="294" name="id">
+    <column id="310" parent="294" name="id">
       <Position>1</Position>
       <Comment>主键</Comment>
       <DataType>int|0s</DataType>
@@ -1252,33 +1260,33 @@
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="309" parent="294" name="task_step_id">
+    <column id="311" parent="294" name="task_step_id">
       <Position>2</Position>
       <Comment>步骤编号</Comment>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="310" parent="294" name="img_url">
+    <column id="312" parent="294" name="img_url">
       <Position>3</Position>
       <Comment>图片路径</Comment>
       <DataType>varchar(512)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="311" parent="294" name="task_id">
+    <column id="313" parent="294" name="task_id">
       <Position>4</Position>
       <Comment>任务编号</Comment>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="312" parent="294" name="PRIMARY">
+    <key id="314" parent="294" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="313" parent="295" name="id">
+    <column id="315" parent="295" name="id">
       <Position>1</Position>
       <Comment>主键</Comment>
       <DataType>int|0s</DataType>
@@ -1286,20 +1294,20 @@
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="314" parent="295" name="phone">
+    <column id="316" parent="295" name="phone">
       <Position>2</Position>
       <Comment>电话</Comment>
       <DataType>char(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="315" parent="295" name="password">
+    <column id="317" parent="295" name="password">
       <Position>3</Position>
       <Comment>密码</Comment>
       <DataType>varchar(125)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="316" parent="295" name="parent_id">
+    <column id="318" parent="295" name="parent_id">
       <Position>4</Position>
       <Comment>推荐人</Comment>
       <DataType>int|0s</DataType>
@@ -1307,13 +1315,13 @@
       <DefaultExpression>0</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="317" parent="295" name="name">
+    <column id="319" parent="295" name="name">
       <Position>5</Position>
       <Comment>名称</Comment>
       <DataType>varchar(125)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="318" parent="295" name="team_num">
+    <column id="320" parent="295" name="team_num">
       <Position>6</Position>
       <Comment>团队人数</Comment>
       <DataType>int|0s</DataType>
@@ -1321,7 +1329,7 @@
       <DefaultExpression>0</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="319" parent="295" name="balance">
+    <column id="321" parent="295" name="balance">
       <Position>7</Position>
       <Comment>余额</Comment>
       <DataType>int|0s</DataType>
@@ -1329,12 +1337,12 @@
       <DefaultExpression>0</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="320" parent="295" name="PRIMARY">
+    <key id="322" parent="295" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="321" parent="296" name="id">
+    <column id="323" parent="296" name="id">
       <Position>1</Position>
       <Comment>主键</Comment>
       <DataType>int|0s</DataType>
@@ -1342,28 +1350,117 @@
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="322" parent="296" name="user_id">
+    <column id="324" parent="296" name="user_id">
       <Position>2</Position>
       <Comment>用户编号</Comment>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="323" parent="296" name="task_id">
+    <column id="325" parent="296" name="task_id">
       <Position>3</Position>
       <Comment>任务编号</Comment>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="324" parent="296" name="status">
+    <column id="326" parent="296" name="status">
       <Position>4</Position>
       <Comment>状态 0-审核不通过 1-待审核 2-审核中 3-审核通过</Comment>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="325" parent="296" name="PRIMARY">
+    <column id="327" parent="296" name="remark">
+      <Position>5</Position>
+      <Comment>备注</Comment>
+      <DataType>varchar(500)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="328" parent="296" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="329" parent="297" name="id">
+      <Position>1</Position>
+      <Comment>主键</Comment>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="330" parent="297" name="user_id">
+      <Position>2</Position>
+      <Comment>用户编号</Comment>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="331" parent="297" name="user_task_id">
+      <Position>3</Position>
+      <Comment>用户任务编号</Comment>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="332" parent="297" name="img_url">
+      <Position>4</Position>
+      <Comment>图片路径</Comment>
+      <DataType>varchar(512)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="333" parent="297" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="334" parent="298" name="id">
+      <Position>1</Position>
+      <Comment>主键</Comment>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="335" parent="298" name="create_time">
+      <Position>2</Position>
+      <Comment>创建时间</Comment>
+      <DataType>datetime|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="336" parent="298" name="user_id">
+      <Position>3</Position>
+      <Comment>操作人编号</Comment>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="337" parent="298" name="user_task_id">
+      <Position>4</Position>
+      <Comment>用户任务编号</Comment>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="338" parent="298" name="remark">
+      <Position>5</Position>
+      <Comment>备注</Comment>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="339" parent="298" name="type">
+      <Position>6</Position>
+      <Comment>类型 0-审核不通过 1-提交 2-审核通过</Comment>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>1</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="340" parent="298" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>

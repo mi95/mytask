@@ -16,9 +16,30 @@ CREATE TABLE `user_task` (
   `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键',
   `user_id` int(11) not NULL COMMENT '用户编号',
   `task_id` int(11) not NULL COMMENT '任务编号',
-  `status` int(11) not NULL COMMENT '状态 0-审核不通过 1-待审核 2-审核中 3-审核通过',
+  `status` int(11) not NULL default 1 COMMENT '状态 0-审核不通过 1-审核中 2-审核通过',
+  `remark` varchar(500) DEFAULT NULL COMMENT '备注',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='用户任务表';
+
+DROP TABLE IF EXISTS `user_task_img`;
+CREATE TABLE `user_task_img` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `user_id` int(11) NOT NULL COMMENT '用户编号',
+  `user_task_id` int(11) NOT NULL COMMENT '用户任务编号',
+  `img_url`  varchar(512) NOT NULL COMMENT '图片路径',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='用户任务图片表';
+
+DROP TABLE IF EXISTS `user_task_record`;
+CREATE TABLE `user_task_record` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `create_time` datetime not null default now() COMMENT '创建时间',
+  `user_id` int(11) not null COMMENT '操作人编号',
+  `user_task_id` int(11) NOT NULL COMMENT '用户任务编号',
+  `remark` varchar(255) COMMENT '备注',
+  `type`  int NOT NULL default 1 COMMENT '类型 0-审核不通过 1-提交 2-审核通过',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='用户任务操作记录';
 
 DROP TABLE IF EXISTS `task_infos`;
 CREATE TABLE `task_infos` (

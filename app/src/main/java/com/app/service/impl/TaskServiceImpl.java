@@ -4,9 +4,7 @@ import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.app.service.TaskService;
 import com.common.mapper.TaskInfosCommonMapper;
-import com.common.mapper.generate.TaskInfosMapper;
-import com.common.mapper.generate.TaskStepImgMapper;
-import com.common.mapper.generate.UserTaskMapper;
+import com.common.mapper.generate.*;
 import com.common.pojo.PageBean;
 import com.common.pojo.ReqParam;
 import com.common.pojo.RespBean;
@@ -32,10 +30,12 @@ public class TaskServiceImpl implements TaskService {
     TaskStepImgMapper imgMapper;
     @Autowired
     UserTaskMapper userTaskMapper;
-//    @Autowired
-//    UserTaskImgMapper taskImgMapper;
+    @Autowired
+    UserTaskImgMapper taskImgMapper;
     @Autowired
     HttpServletRequest request;
+    @Autowired
+    UserTaskRecordMapper taskRecordMapper;
 
     @Override
     public RespBean selectTaskList(ReqParam reqParam) {
@@ -65,25 +65,28 @@ public class TaskServiceImpl implements TaskService {
     @Transactional
     @Override
     public RespBean submitUserTask(JSONObject object) {
-//        UserTask userTask = object.toJavaObject(UserTask.class);
-//        CommonException.verifyObjects(userTask.getTaskId());
-//        TaskInfos taskInfos = taskInfosMapper.selectByPrimaryKey(userTask.getTaskId());
-//        if(taskInfos == null){
-//            CommonException.throwNewCommonException("任务不存在");
-//        }
-//        userTask.setUserId(CommonUtils.getUserId(request));
-//        CommonException.resultHandler(userTaskMapper.insertSelective(userTask));
-//        List<String> imgList = JSONArray.parseArray(object.getString("imgList"),String.class);
-//        List<UserTaskImg> taskImages = new ArrayList<>();
-//        if(!CommonException.verifyList(imgList)){
-//            for(String img : imgList){
-//                UserTaskImg userTaskImg = new UserTaskImg();
-//                userTaskImg.setImgUrl(img);
-//                userTaskImg.setUserTaskId(userTask.getId());
-//                taskImages.add(userTaskImg);
-//            }
-//        }
-//        CommonException.resultHandler(taskImgMapper.batchInsert(taskImages));
-        return RespBean.success();
+        UserTask userTask = object.toJavaObject(UserTask.class);
+        CommonException.verifyObjects(userTask.getTaskId());
+        TaskInfos taskInfos = taskInfosMapper.selectByPrimaryKey(userTask.getTaskId());
+        if(taskInfos == null){
+            CommonException.throwNewCommonException("任务不存在");
+        }
+        userTask.setUserId(CommonUtils.getUserId(request));
+        CommonException.resultHandler(userTaskMapper.insertSelective(userTask));
+        List<String> imgList = JSONArray.parseArray(object.getString("imgList"),String.class);
+        List<UserTaskImg> taskImages = new ArrayList<>();
+        if(!CommonException.verifyList(imgList)){
+            for(String img : imgList){
+                UserTaskImg userTaskImg = new UserTaskImg();
+                userTaskImg.setImgUrl(img);
+                userTaskImg.setUserTaskId(userTask.getId());
+                taskImages.add(userTaskImg);
+            }
+        }
+        UserTaskRecord userTaskRecord = new UserTaskRecord();
+        userTaskRecord.setUserId(CommonUtils.getUserId(request));
+        userTaskRecord.setUserTaskId(userTask.getId());
+        CommonException.resultHandler(taskRecordMapper.insertSelective(userTaskRecord));
+        return CommonException.resultHandler(taskImgMapper.batchInsert(taskImages));
     }
 }
